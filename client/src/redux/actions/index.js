@@ -2,7 +2,6 @@ import axios from 'axios';
 import dotenv from 'dotenv'
 
 export const GET_GAME_DETAIL="GET_GAME_DETAIL", CLEAN_GET_DETAIL="CLEAN_GET_DETAIL", GET_VIDEOGAMES="GET_VIDEOGAMES", GET_GAME_NAME="GET_GAME_NAME", GET_GENRES="GET_GENRES", POST_CREATE_GAME="POST_CREATE_GAME"
-// export const url = "http://localhost:3001"
 dotenv.config();
 const url = process.env.REACT_APP_API || "http://localhost:3001";
 
