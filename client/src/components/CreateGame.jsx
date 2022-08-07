@@ -5,7 +5,6 @@ import {  Link, useHistory } from 'react-router-dom';
 import { getGenres, postCreateGame } from '../redux/actions';
 import s from '../styles/create.module.css'
 import h from '../styles/home.module.css'
-// import Loading from '../components/Loading'
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
