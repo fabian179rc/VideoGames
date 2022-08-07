@@ -84,7 +84,7 @@ function About (props){
                         <TextEnd>Front-End</TextEnd>
                         <ContainerAllTech>
                         {frontend.map(t=>(
-                            <ContainerTech href={t.link} target="_blank" rel="noopener noreferrer">
+                            <ContainerTech key={t.link} href={t.link} target="_blank" rel="noopener noreferrer">
                                 <ImgTech src={t.img}/>
                                 <TitleTech>{t.name}</TitleTech>
                             </ContainerTech>
@@ -95,7 +95,7 @@ function About (props){
                         <TextEnd>Back-End</TextEnd>
                         <ContainerAllTech>
                             {backend.map(t=>(
-                                <ContainerTech href={t.link} target="_blank" rel="noopener noreferrer">
+                                <ContainerTech key={t.link} href={t.link} target="_blank" rel="noopener noreferrer">
                                     <ImgTech src={t.img}/>
                                     <TitleTech>{t.name}</TitleTech>
                                 </ContainerTech>
