@@ -11,7 +11,7 @@ import express from '../Assets/expressjs.svg'
 import postgresql from '../Assets/postgresql.svg'
 import nodejs from '../Assets/node.svg'
 import {Container,ContainerText,ContainerTech,ContainerAllTech,ContainerTextArea
-    ,ContainerEnd,TextEnd,Title,ImgTech,TitleTech} from '../styles/About.js'
+    ,ContainerEnd,TextEnd,Title,ImgTech,TitleTech} from '../styles/About'
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
