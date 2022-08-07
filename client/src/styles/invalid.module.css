@@ -1,0 +1,18 @@
+.invalid{
+    background-image: url(../img/invalid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+
+    }
+
+.invalid2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

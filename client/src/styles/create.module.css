@@ -1,0 +1,31 @@
+.create{
+    background-image: url(../img/create.jpg);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+}
+
+.label{
+  background: linear-gradient(345deg, black, transparent);
+  box-shadow: black 2rem 2rem 30px;
+  display: inline-grid;
+  grid-gap: 0.7rem;
+  margin: 0.005rem;
+  padding: 0.04rem;
+  border-radius: 0.4rem;
+  border: solid 0.06rem rgba(255, 255, 255, 0);
+  justify-items: center;
+  z-index: 5;
+
+}
+
+
+

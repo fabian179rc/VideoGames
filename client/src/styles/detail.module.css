@@ -1,0 +1,69 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 90vh;
+    --card-width: 100vh
+  }
+  .c{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  .card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height)/2;
+    padding: 5px;
+    padding-top: 20px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(196, 210, 216);
+    font-family: cursive;
+  }
+  .image{
+    width: 90vh;
+    height: auto
+
+  }
+
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+  
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #e00720);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
