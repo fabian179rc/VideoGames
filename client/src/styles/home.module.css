@@ -4,13 +4,7 @@ body{
         background-position: center;
         height: 100vh;
         position: relative;
-        /* font-family: cursive; */
 }
-
-/* html, body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-} */
 
 
 .navbar{
@@ -19,13 +13,11 @@ body{
     align-items: center;
     background-color: #ad111168;
     border-bottom: 2px solid rgb(83, 2, 174);
-    /* font-family: cursive; */
     padding: 0.7em;
 
 }
 
 .searchBar{
-    /* font-family: cursive; */
     border-bottom: red;
 }
 
@@ -36,7 +28,6 @@ body{
     align-items: center;
     justify-content: center;
     height: 100%;
-    /* font-family: cursive; */
 
 }
 

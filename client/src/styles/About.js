@@ -74,6 +74,7 @@ export const ContainerEnd = styled.div`
 
 export const ContainerTextArea = styled.div`
     padding: 0px 90px;
+    color: white;
     font-size: 1.3rem;
     @media screen and (max-width: 560px) {
         padding: 0px;

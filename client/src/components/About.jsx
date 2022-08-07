@@ -33,7 +33,7 @@ const frontend = [{
         img: react 
     },{
         name: 'Redux',
-        link: '',
+        link: 'https://es.redux.js.org/',
         img: redux 
     },{
         name: 'Styled Components',
