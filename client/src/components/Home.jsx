@@ -7,6 +7,7 @@ import imgGame from '../img/game.png'
 import s from '../styles/home.module.css'
 import Loading from '../components/Loading'
 import SearchBar from '../components/SearchBar'
+import Paginado from '../components/Paginado'
 import { Link, useHistory } from 'react-router-dom'
 //////////////////////////////////////////////////////////////////
 
@@ -23,6 +24,7 @@ const[card, setCard] = useState([])
 const[orderName, setOrderName] = useState([])
 const[orderRating, setOrderRating] = useState([])
 const[filterBy, setFilterBy] = useState([])
+const[pageNumber, setPageNumber] = useState(1)
 const [limitCard, setLimitCard] = useState({max:14,min:0})
 
 /////////////////////////////////////////////////////////
@@ -54,23 +56,6 @@ useMemo(()=>{
     setCard(filterBy)
     setLimitCard({max:14,min:0})
 },[filterBy])
-
-function button(){
-    let paginado = []
-    const count = card.length / 15
-    for (let i = 0; i < count; i++) {
-        paginado.push(<button className={s.bPaginado} key={i} value={i+1} onClick={handlePage}>{i+1}</button>)
-    }
-return paginado;
-};
-
-function handlePage(e){
-    e.preventDefault();
-    const value = Number(e.target.value);
-    if(value === 1) setLimitCard({max:14,min:0})
-    else setLimitCard({max:value * 15 -1, min: (value -1)*15})
-    window.scroll({top:0,left:0})
-};
 
 function back (){
     setCard(gameAll)
@@ -217,7 +202,12 @@ function Cards(){
         <div className={s.cards}>{/*Card VideoGames*/}
             {Cards()}
         </div>
-            <div className={s.paginado}>{button()}</div>{/* Paginado */}
+            <div className={s.paginado}><Paginado
+            card={card}
+            setLimitCard={setLimitCard}
+            setPageNumber={setPageNumber}
+            pageNumber={pageNumber}
+            /></div>Paginado
     </Fragment>
     )
 }

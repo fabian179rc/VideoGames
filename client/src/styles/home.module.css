@@ -142,3 +142,16 @@ body{
     height: 30px;
     margin: 0.5em;
 }
+
+.aPaginado{
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    border-radius: 10%;
+    border: 0.2em solid black;
+    box-shadow: 4px 4px 12px #f1faeec9;
+    font-weight:bold;
+    width: 30px;
+    height: 30px;
+    margin: 0.5em;
+}
