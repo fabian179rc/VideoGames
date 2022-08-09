@@ -13,6 +13,7 @@ try{
         let gamesApi = await axios.get(`https://api.rawg.io/api/games?key=${Api_Key}&search=${name}`); //Games API
                 gamesApi = gamesApi.data.results.map((g)=>{
                     return {
+                        id : g.id,
                         img : g.background_image,
                         name : g.name,
                         genres : g.genres.map((z) => z.name ),
