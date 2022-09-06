@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0f2e44e6-0646-441d-8747-8039d19c57ea/microsoft.web/sites/subscriptions/0f2e44e6-0646-441d-8747-8039d19c57ea/resourceGroups/videogames/providers/Microsoft.Web/sites/VideoGamesPro",
+    "appService.deploySubpath": "."
+}
