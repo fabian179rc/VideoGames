@@ -33,7 +33,9 @@ __IMPORTANTE__: Las funcionalidades de filtrado y ordenamiento se realizaron des
 - [ ] Sequelize - Postgres
 
 ![](https://github.com/fabian179rc/VideoGames/blob/main/3.png)
+<br>
 ![](https://github.com/fabian179rc/VideoGames/blob/main/1.png)
+<br>
 ![](https://github.com/fabian179rc/VideoGames/blob/main/2.png)
 
 
